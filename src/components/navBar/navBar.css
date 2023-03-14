@@ -1,0 +1,111 @@
+ .nav_bar{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    margin-bottom: 15px;
+    backdrop-filter: blur(10px);
+    z-index: 9;
+}
+
+.right_nav_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.right_nav_bar span{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.left_nav_bar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.nav_list_ul>ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 4Vmax;
+}
+.nav_list_ul>ul>li{
+    color: #F5C32C;
+    transition: border-bottom-width 0.1s;
+    font-size: 1.2rem;
+}
+
+.nav_list_ul>ul>li:hover{
+    color: black;
+    cursor: pointer;
+    border-bottom: 3px solid #F5C32C;
+}
+
+.menu_bar{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .nav_bar{
+        position: relative;
+        height: 30px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .right_nav_bar{
+        justify-content: space-between;
+    }
+    .left_nav_bar{
+        width: 0px;
+    }
+     .menu_bar{
+        display: block;
+        position: relative;
+        right: 30px;
+    }
+    .nav_list_ul{
+        display: none;
+    }
+    .nav_list_ul_mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        top: 260px;
+        right: 300px;
+        background-color: white;
+        }
+        .nav_list_ul_mobile>ul{
+            gap: 4vmax;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nav_button{
+            margin-right: 40px;
+        }
+    .nav_list_ul_mobile>ul>li{
+        color: #F5C32C;
+        transition: border-bottom-width 0.1s;
+        font-size: 1.2rem;
+    }
+    .nav_list_ul_mobile>ul>li:hover{
+        color: black;
+        cursor: pointer;
+        border-bottom: 3px solid #F5C32C;
+    }
+    .fa-solid{
+        position: relative;
+        font-size: 2rem;
+    }
+    .fa-solid:hover{
+        cursor: pointer;
+        color: #F5C32C;
+    }
+   
+}

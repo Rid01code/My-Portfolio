@@ -1,0 +1,15 @@
+.button{
+    padding: 10px 15px;
+    width: 150px;
+    font-size: 1rem;
+    padding: 10px 05px;
+    border: 2px solid #ffae06;
+    border-radius: 20px;
+    background: linear-gradient(225deg, #e68805, #ffa205);
+}
+
+.button:hover{
+    cursor: pointer;
+    background: white;
+    color: #ffa205;
+}

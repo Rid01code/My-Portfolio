@@ -1,0 +1,16 @@
+.footer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    
+}
+.footer div i{
+    margin: 20px;
+    color: rgb(51, 153, 236);
+}

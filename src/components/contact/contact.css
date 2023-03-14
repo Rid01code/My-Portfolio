@@ -1,0 +1,125 @@
+img{
+    width: 50px;
+}
+.contact>:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.contact>:nth-child(1)>*{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.contact>:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2, 42, 61, 0.582);
+    border: 2px solid rgb(78, 183, 231);
+    border-radius: 15px;
+    padding: 0px  5px;
+    width: 350px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.mail:hover{
+    background-color: white;
+    color: rgba(2, 42, 61, 0.582);
+}
+.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 0px  5px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.mobile:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.822);
+}
+.mobile>p{
+    text-align: center;
+}
+.contact_inputs{
+    width: 100%;
+    background-image: url(../../img/wave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+}
+.contact_inputs>form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 207px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 0px 0px;
+    padding: 90px 0px 0px 0px;
+}
+.contact_inputs>form>:nth-child(1){
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.contact_inputs>form>:nth-child(2){
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.contact_inputs>form>:nth-child(3){
+    width: 400px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.contact_inputs>form>:nth-child(4){
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+    .contact>:nth-child(1)>*{
+        font-size: 2.6rem;
+    }
+    .contact>:nth-child(2){ 
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .contact_inputs>form>:nth-child(1){
+        width: 250px;
+    }
+    .contact_inputs>form>:nth-child(2){
+        width: 250px;
+    }
+    .contact_inputs>form>:nth-child(3){
+        width: 250px;
+    }
+    .contact_inputs>form>:nth-child(4){
+        width: 200px;
+    }
+}
