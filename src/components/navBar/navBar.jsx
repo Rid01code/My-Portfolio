@@ -1,16 +1,16 @@
 
-import React, { useContext } from 'react';
+import React from 'react';
 
 import './navBar.css';
 
 import '../button/button.css'
 import Toggle from '../toggle/toggle';
 import { useState } from 'react';
-import { themeContext } from '../../Context';
+
 import { Link } from "react-scroll";
 
 const NavBar =()=>{
-    const theme = useContext(themeContext);
+
     const [showMenu , setShowMenu] = useState(false);
 
     return(
@@ -24,7 +24,7 @@ const NavBar =()=>{
 
 
             <div className='menu_bar' onClick={()=>{setShowMenu(!showMenu)}}>
-                <i class={showMenu ? "fa-solid fa-xmark": "fa-solid fa-bars"}></i> 
+                <i className={showMenu ? "fa-solid fa-xmark": "fa-solid fa-bars"}></i> 
             </div>
 
                 <div className={showMenu ? "nav_list_ul_mobile" : "nav_list_ul"}>
@@ -32,8 +32,8 @@ const NavBar =()=>{
                     <ul>
 
                         <li>
-                            <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
-                                Home
+                            <Link activeClass="active" to="intro" spy={true} smooth={true}>
+                                Intro
                             </Link>
                         </li>
                     
@@ -63,7 +63,7 @@ const NavBar =()=>{
 
                     <div className='nav_button'>
                         <button className='button'><Link to="contact" spy={true} smooth={true}>
-                                Contct Me
+                                Contact Me
                             </Link></button>
                     </div>
                     </ul>

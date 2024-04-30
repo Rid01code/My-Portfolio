@@ -1,10 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@1,300&family=Raleway:wght@500&family=Satisfy&display=swap');
 .intro{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0px;
-    margin-top: 40px;
-    width: 100%;
+    margin: 10px 20px;
+    width: 97%;
 }
 
 .right_part_intro{
@@ -17,6 +19,7 @@
     display: flex;
     flex-direction: column;
     height: 350px;
+    width: 80%;
 }
 
 .right_part_intro>:nth-child(1)>:nth-child(1){
@@ -32,9 +35,11 @@
 }
 
 .right_part_intro>:nth-child(1)>:nth-child(3){
-    color: rgb(156, 150, 150);
+    color: rgb(121, 121, 121);
     margin-top: 10px;
-    font-size: 1.3rem;
+    font-size: 2vmax;
+    font-family: "Bree Serif";
+    font-weight: 800;
 }
 
 .right_part_intro>:nth-child(1)>:nth-child(4){
@@ -59,13 +64,12 @@
 .left_part_intro>:nth-child(1){
     position: relative;
     z-index: 1;
-    top: 22%;
     right: 1%;
     border-radius: 25%;
 }
 .left_part_intro>:nth-child(3){
     position: absolute;
-    top: 8%;
+    top: 11%;
     /* right: 2%; */
 }
 .left_part_intro>:nth-child(4){
@@ -74,7 +78,7 @@
 }
 .left_part_intro>:nth-child(2){
     position: absolute;
-    top:20%;
+    top:26%;
     right: 100px;
     width: 25vmin;
     z-index: 8;
@@ -87,10 +91,14 @@
         flex-direction: column;
         height: 135vh;
         width: 100%;
+        margin: 10px 0px;
     }
     .right_part_intro{
         margin-top: 25px;
         transform: scale(0.8);
+    }
+    .right_part_intro>:nth-child(1)>:nth-child(3){
+        font-size: 5vmin;
     }
     .right_part_intro>:nth-child(2){
         padding: 0px;
@@ -101,7 +109,7 @@
         top: 60%;
     }
     .left_part_intro>:nth-child(1){
-        top: 40px;
+        top: 110px;
         right: -13%;
         transform: scale(0.8)
     }

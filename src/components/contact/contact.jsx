@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 import './contact.css';
 
@@ -13,9 +13,6 @@ import whatsapp from "../../img/whatsapp.png"
 const Contact = () =>{
   const form = useRef();
   const [done, setDone] = useState(false);
-  // let setDone=()=>{
-  //   alert('Message Send')
-  // };
 
   const sendEmail = (e) => {
     e.preventDefault();

@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Oswald&family=Phudu:wght@500&family=Playfair+Display&display=swap');
 .footer{
     width: 80%;
     margin: auto;
     text-align: center;
+}
+.footer>p{
+    font-family: "phudu";
 }
 .footer div{
     display: flex;

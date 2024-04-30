@@ -2,11 +2,11 @@ import React, {useContext} from 'react'
 
 import "./skill.css";
 
-import html from "../../img/html-logo.png";
-import css from "../../img/css-logo.png";
-import javaScript from "../../img/javaScript.png";
-import reactJS from "../../img/React logo.png";
-import git from "../../img/git.png";
+import html from "../../img/html.png";
+import css from "../../img/css.png";
+import javaScript from "../../img/javascript.png";
+import reactJS from "../../img/React.png";
+import git from "../../img/Git-logo.png";
 import { themeContext } from '../../Context';
 import { motion } from "framer-motion";
 import {Link} from "react-scroll";
@@ -21,7 +21,7 @@ const Skill = () => {
 
             <span>Web Developer</span>
 
-            <span> Who can make visually appealing and functional websites, passionate about <br/> staying up-to-date with the latest industry trends. I have a strong foundation<br/> in HTML , CSS , JAVASCRIPT , GIT and REACT.</span>
+            <span> Who can make visually appealing and functional websites, passionate about staying up-to-date with the latest industry trends. I have a strong foundation in HTML , CSS , JAVASCRIPT , GIT and REACT.</span>
 
             <span><button className='button'> <Link to="contact" spy={true} smooth={true}>
                                 Hire Me

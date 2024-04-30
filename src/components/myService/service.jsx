@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
 import "./service.css";
 import "../button/button.css"
@@ -8,18 +8,17 @@ import Card from "../card/card";
 import glasses from "../../img/glasses.png";
 import heartEmoji from "../../img/heartEmoji.png";
 import humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import MyResume from "./My Resume.pdf";
 
 
 
 const Service = () => {
-  const transition = { duration: 2, type:"spring"};
-  const theme = useContext(themeContext);
-  return (
+const transition = { duration: 2, type:"spring"};
+
+return (
     <div className='service'>
-             <div 
+            <div 
                 className="blur" 
                 style={{
                 position: "absolute",
@@ -82,7 +81,7 @@ const Service = () => {
                     
         </div>
     </div>
-  )
+    )
 }
 
 export default Service;

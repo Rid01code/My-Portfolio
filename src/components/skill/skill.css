@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:ital,wght@1,300&family=Raleway:wght@500&family=Satisfy&display=swap');
 .skill{
     display: flex;
     margin: 10px 20px;
@@ -12,16 +13,19 @@
     width: 50%;
 }
 .skill_left_part>:nth-child(1){
-    font-size: 3rem;
+    font-size: 3.7vmax;
     font-weight: bolder;
 }
 .skill_left_part>:nth-child(2){
-    font-size: 3rem;
+    font-size: 3.7vmax;
     font-weight: bolder;
 }
 .skill_left_part>:nth-child(3){
-    color: rgb(156, 150, 150);
+    color: rgb(121, 121, 121);
     margin-top: 10px;
+    font-family: "Bree Serif";
+    font-weight: 800;
+    font-size: 2vmax;
 }
 .skill_left_part>:nth-child(4)>button{
     margin-top: 85px;
@@ -33,14 +37,14 @@
 }
 
 .work_main_circle{
-    height: 300px;
-    width: 300px;
+    height: 290px;
+    width: 290px;
     position: relative;
     border-radius: 100%;
     background: #e0e0e0;
     box-shadow: 11px 11px 22px #868686, -11px -11px 22px #ffffff;
     right: 27%;
-    bottom: 4%;
+    bottom: -34%;
     z-index: 7;
     
 }
@@ -75,7 +79,7 @@
     background: #ffffff;
     box-shadow:  20px 20px 60px #d9d9d9,
                 -20px -20px 60px #ffffff;
-    top: 160px;
+    top: 140px;
     right: 04px;
     width: 300px;
     height: 300px;
@@ -88,7 +92,7 @@
     box-shadow:  20px 20px 60px #d9d9d9,
                 -20px -20px 60px #ffffff;
     top: 6px;
-    right: 160px;
+    right: 140px;
     width: 300px;
     height: 300px;
 }

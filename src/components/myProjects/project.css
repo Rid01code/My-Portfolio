@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Raleway:wght@500&family=Satisfy&display=swap');
 .project {
   display: flex;
   align-items: center;
@@ -7,40 +8,86 @@
 }
 .project>h1{
   font-size: 3rem;
+  font-family: "Raleway";
 }
-/* heading */
-
-/* slider */
-/* .project .swiper{
-    overflow: visible!important;
-} */
-
+.swiper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper{
+  width: 92.4%;
+  }
+.project .swiper{
+  overflow: hidden!important;
+}
 .project-slider {
   width: 100%;
 }
-
-.project-slider .swiper-slide {
-  width: 20rem;
+.projectDiv{
+  width: 22vmax;
+  height: 11.8vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.project img {
-  width: 29rem;
-  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 19px;
-}
-.project img:hover{
-  filter: blur(2px);
-}
-#span{
-  display: none;
-}
-#hover_span{
-  width: 100%;
-  text-align: center;
+.projectImg{
+  width: 22vmax;
+  height: 12vmax;
+  z-index: 3;
   position: absolute;
-  z-index: 4;
-  top: 41%;
-  color: white;
 }
+.projectDiv:before{
+  content:"";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 22vmax;
+  height: 11.8vmax;
+  top: 0%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  
+}
+
+.projectDiv:hover:before{
+  opacity: 1;
+  z-index: 4;
+}
+
+.fa-logo{
+  color: white;
+  font-size: 30px;
+  position: relative;
+  margin: 15px;
+  transition: all 0.5s;
+  z-index: 6;
+  opacity: 0;
+}
+.projectDiv:hover .fa-logo{
+  opacity: 1;
+}
+.fa-logo:hover{
+  transform: scale(0.8);
+}
+.project_name{
+  box-sizing: border-box;
+  text-align: center;
+  width: 22vmax;
+  background: rgb(201, 199, 199);
+  font-size: 1.1vmax;
+}
+.swiper-button-prev{
+  color: orange;
+  font-weight: 1000;
+}
+.swiper-button-next{
+  color: orange;
+  font-weight: 1000;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  opacity: 0;
+}
+
 
 
 
@@ -51,8 +98,25 @@
   .project>h1{
     font-size: 2.6rem;
   }
-  
-  .project img{
-    width: 13rem;
+  .projectDiv{
+    width: 35vmin;
+    height: 20vmin;
   }
+  .projectDiv:before{
+    width: 35vmin;
+    height: 20vmin;
+  }
+  .projectImg{
+    width: 35vmin;
+    height: 20vmin;
+  }
+  .project_name{
+    width: 35vmin;
+    font-size: 1.4vmin;
+  }
+  .projectDiv:active:before{
+    opacity: 1;
+    z-index: 4;
+  }
+
 }

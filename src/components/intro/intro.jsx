@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import FloatingDiv from '../floatingDiv/floatingDiv';
 import './intro.css';
 import "../button/button.css";
@@ -9,22 +9,19 @@ import MyPic from '../../img/MyPic.png';
 import crown from "../../img/crown.png";
 import thumbUp from "../../img/thumbUp.png";
 import coolEmoji from "../../img/coolEmoji.png";
-import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Intro = () => {
     const transition = { duration: 2, type:"spring"};
-    const theme = useContext(themeContext);
 
-    const darkMode = theme.state.darkMode;
     return (
     <div className='intro'>
         <div className="right_part_intro">
             <div>
                 <span style={{color:"#FCA61F"}}>Hii! I am</span>
                 <span>Ridwan Rahaman</span>
-                <span>"Web developer with a keen eye for design and <br/>a strong understanding of the user experience, passionate about <br/>creating websites that are both beautiful and user-friendly."</span>
+                <span>"Web developer with a keen eye for design and a strong understanding of the user experience, passionate about creating websites that are both beautiful and user-friendly."</span>
                 <button className='button'> <Link to="contact" spy={true} smooth={true}>
                                 Hire Me
                             </Link></button>
@@ -43,7 +40,7 @@ const Intro = () => {
         <div className='left_part_intro'>
             <motion.img
                 initial={{ width: '10vmax' , height: "10vmax"}}
-                whileInView={{ width: '34vmax' , height: "34vmax"}}
+                whileInView={{ width: '28vmax' , height: "30vmax"}}
                 transition={transition}
                 src={MyPic} alt="My Pic"/>
 
@@ -99,7 +96,7 @@ const Intro = () => {
                 borderRadius: "50%",
                 filter: "blur(100px)",
                 zIndex: "8",
-          }}
+            }}
         ></div>
             
         </div>
