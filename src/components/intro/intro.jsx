@@ -1,5 +1,5 @@
 import React from 'react';
-import FloatingDiv from '../floatingDiv/floatingDiv';
+import FloatingDiv from '../floating-div/floatingDiv';
 import './intro.css';
 import "../button/button.css";
 import github from '../../img/github.png';
