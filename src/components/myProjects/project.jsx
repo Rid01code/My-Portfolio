@@ -35,7 +35,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg' autoPlay muted>
+                  <video className='projectimg' autoPlay muted>
                     <source src={project1} type='video/mp4'/>
                   </video>
 
@@ -49,7 +49,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project2} type='video/mp4'/>
                   </video>
 
@@ -63,7 +63,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project3} type='video/mp4'/>
                   </video>
 
@@ -77,7 +77,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project4} type='video/mp4'/>
                   </video>
 
@@ -91,7 +91,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project5} type='video/mp4'/>
                   </video>
 
@@ -105,7 +105,7 @@ const Project = () => {
               
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project6} type='video/mp4'/>
                   </video>
 
@@ -119,7 +119,7 @@ const Project = () => {
 
               <SwiperSlide className='swiper-slide'>
                 <div className='projectDiv'>
-                  <video className='projectImg'  autoPlay muted>
+                  <video className='projectimg'  autoPlay muted>
                     <source src={project7} type='video/mp4'/>
                   </video>
 
