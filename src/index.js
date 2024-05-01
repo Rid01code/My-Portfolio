@@ -1,6 +1,6 @@
 import ReactDom from "react-dom";
 import React from "react";
-import App from "../src/app.js";
+import App from "./app";
 import { ThemeProvider } from "./Context";
 
 ReactDom.render(
