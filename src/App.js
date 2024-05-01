@@ -14,7 +14,7 @@ let App=()=>{
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return(
-        <div   className="App"
+        <div   className="app"
         style={{
             background: darkMode ? "black" : "",
             color: darkMode ? "white" : "",
