@@ -9,7 +9,7 @@ import glasses from "../../img/glasses.png";
 import heartEmoji from "../../img/heartEmoji.png";
 import humble from "../../img/humble.png";
 import { motion } from "framer-motion";
-import MyResume from "./My Resume.pdf";
+import RidwanResume from "./Ridwan-resume.pdf";
 
 
 
@@ -40,7 +40,7 @@ return (
             <span>Here is some awesome services you can get from here :) </span>
 
             <span>
-                <a href={MyResume} download>
+                <a href={RidwanResume} download>
                     <button className='button'>Download CV</button>
                 </a>    
             </span>
