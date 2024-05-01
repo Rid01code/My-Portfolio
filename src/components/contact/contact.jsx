@@ -29,7 +29,7 @@ const Contact = () =>{
           document.getElementById('form').reset()
       }, 
       (error) => {
-          console.log(error.text);
+          console.log(error.text , done);
       });
   };
 

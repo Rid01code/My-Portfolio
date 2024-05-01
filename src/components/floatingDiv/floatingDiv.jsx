@@ -13,7 +13,7 @@ const FloatingDiv = ({img, txt1, txt2}) => {
     <div className='floating_div'
           style={{background  : darkMode ? " #2f2d2d" :"" ,
                   boxShadow : darkMode ? "20px -20px 60px #282626 ,  -20px 20px 60px #363434" : ""}}>
-        <img src={img}/>
+        <img src={img} alt='floating-div'/>
         <span>
             {txt1}
             <br/>
